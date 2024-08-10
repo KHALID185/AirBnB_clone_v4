@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-  // task 3
+  // script js for task 3
   $.ajax('http://0.0.0.0:5001/api/v1/status').done(function (data) {
     if (data.status === 'OK') {
       $('#api_status').addClass('available');
@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
     }
   });
 
-  // task 2
+  // script js for task 2
   const amenityIds = {};
   $('.amenities input[type=checkbox]').click(function () {
     if ($(this).prop('checked')) {
@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
 
   const stateIds = {};
   const cityIds = {};
-  // task 4
+  // script js for task 4
   $('.filters button').click(function () {
     $.ajax({
       type: 'POST',
@@ -104,7 +104,7 @@ window.addEventListener('load', function () {
     });
   });
 
-  // task 6
+  // the first advanced task
   $('.stateCheckBox').click(function () {
     if ($(this).prop('checked')) {
       stateIds[$(this).attr('data-id')] = $(this).attr('data-name');

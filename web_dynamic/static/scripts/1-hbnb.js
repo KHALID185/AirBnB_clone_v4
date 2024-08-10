@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-  // task 2
+  // this js script is for the second task
   const amenityIds = {};
   $('input[type=checkbox]').change(function () {
     if ($(this).prop('checked')) {
